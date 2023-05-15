@@ -1,4 +1,4 @@
-
+Anime status: https://github.com/Craftwork2720/pmm_anime_status
     operations:
       mass_user_rating_update: mal
     overlay_path:
