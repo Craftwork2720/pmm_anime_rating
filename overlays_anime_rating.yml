@@ -2,16 +2,21 @@ templates:
 overlays:
   rating_highest:
     overlay:
-      name: Rating_Higest_BG
+      font_color: "#74AB61"
       back_color: "#103022DD"
+      group: rating_text
+      name: text(user_rating)
+      rating_type: user_rating
+      weight: 20
+      font: config/fonts/Poppins-Bold.ttf
+      font_size: 70
       back_radius: 20
       back_width: 165
-      back_height: 110
-      horizontal_offset: 375
-      horizontal_align: center
+      back_height: 120
+      horizontal_offset: 35
+      horizontal_align: right
       vertical_offset: 35
       vertical_align: bottom
-      file: config/overlays/blank.png
     plex_search:
       all:
         user_rating.gte: 8.2
@@ -19,16 +24,21 @@ overlays:
         
   rating_high:
     overlay:
-      name: Rating_High_BG
+      font_color: "#C3F0B8"
       back_color: "#4c9539DD"
+      group: rating_text
+      name: text(user_rating)
+      rating_type: user_rating
+      weight: 20
+      font: config/fonts/Poppins-Bold.ttf
+      font_size: 70
       back_radius: 20
       back_width: 165
-      back_height: 110
-      horizontal_offset: 375
-      horizontal_align: center
+      back_height: 120
+      horizontal_offset: 35
+      horizontal_align: right
       vertical_offset: 35
       vertical_align: bottom
-      file: config/overlays/blank.png
     plex_search:
       all:
         user_rating.gte: 7.2
@@ -36,16 +46,21 @@ overlays:
         
   rating_mid:
     overlay:
-      name: Rating_Mid_BG
+      font_color: "#7A4300"
       back_color: "#e5a00dDD"
+      group: rating_text
+      name: text(user_rating)
+      rating_type: user_rating
+      weight: 20
+      font: config/fonts/Poppins-Bold.ttf
+      font_size: 70
       back_radius: 20
       back_width: 165
-      back_height: 110
-      horizontal_offset: 375
-      horizontal_align: center
+      back_height: 120
+      horizontal_offset: 35
+      horizontal_align: right
       vertical_offset: 35
       vertical_align: bottom
-      file: config/overlays/blank.png
     plex_search:
       all:
         user_rating.gte: 6.5
@@ -53,88 +68,21 @@ overlays:
 
   rating_low:
     overlay:
-      name: Rating_Low_BG
+      font_color: "#FFB3C0"
       back_color: "#cc0000DD"
+      group: rating_text
+      name: text(user_rating)
+      rating_type: user_rating
+      weight: 20
+      font: config/fonts/Poppins-Bold.ttf
+      font_size: 70
       back_radius: 20
       back_width: 165
-      back_height: 110
-      horizontal_offset: 375
-      horizontal_align: center
+      back_height: 120
+      horizontal_offset: 35
+      horizontal_align: right
       vertical_offset: 35
       vertical_align: bottom
-      file: config/overlays/blank.png
-    plex_search:
-      all:
-        user_rating.gte: 0.1
-        user_rating.lte: 6.4
-#######################################################################
-  user_rating_highest:
-    overlay:
-      group: rating_text
-      weight: 20
-      rating_type: user_rating
-      name: text(user_rating)
-      horizontal_offset: 375
-      horizontal_align: center
-      vertical_offset: 65
-      vertical_align: bottom
-      font: config/fonts/Poppins-Bold.ttf
-      font_size: 70
-      font_color: "#74AB61"
-    plex_search:
-      all:
-        user_rating.gte: 8.2
-        user_rating.lte: 9.9
-
-  user_rating_high:
-    overlay:
-      group: rating_text
-      weight: 19
-      rating_type: user_rating
-      name: text(user_rating)
-      horizontal_offset: 375
-      horizontal_align: center
-      vertical_offset: 65
-      vertical_align: bottom
-      font: config/fonts/Poppins-Bold.ttf
-      font_size: 70
-      font_color: "#C3F0B8"
-    plex_search:
-      all:
-        user_rating.gte: 7.2
-        user_rating.lte: 8.1
-
-  user_rating_mid:
-    overlay:
-      group: rating_text
-      weight: 19
-      rating_type: user_rating
-      name: text(user_rating)
-      horizontal_offset: 375
-      horizontal_align: center
-      vertical_offset: 65
-      vertical_align: bottom
-      font: config/fonts/Poppins-Bold.ttf
-      font_size: 70
-      font_color: "#7A4300"
-    plex_search:
-      all:
-        user_rating.gte: 6.5
-        user_rating.lte: 7.1
-
-  user_rating_low:
-    overlay:
-      group: rating_text
-      weight: 19
-      rating_type: user_rating
-      name: text(user_rating)
-      horizontal_offset: 375
-      horizontal_align: center
-      vertical_offset: 65
-      vertical_align: bottom
-      font: config/fonts/Poppins-Bold.ttf
-      font_size: 70
-      font_color: "#FFB3C0"
     plex_search:
       all:
         user_rating.gte: 0.1
